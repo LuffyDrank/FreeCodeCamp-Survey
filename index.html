@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="background">
+  <h1 id="title">Cool Survey </h1>
+  <p id="description"> Do the survey or u afraid twink </p>
+  <form id="survey-form" action=""> 
+    <fieldset>
+    <label id="name-label" for="name">Full name: 
+    </label>
+    <input  type="text" required id="name" name="name" placeholder="Write your full name">
+    <label id="email-label" for="email">Email adress: 
+    </label>
+    <input type="email" required id="email" name="email" placeholder="Write your email 'Example@example.com'">
+    <label id="number-label" for="number"> Age:
+      </label>
+      <input type="number" id="number" min="18" max="110" placeholder="Write your age"> 
+      <label for="dropdown"> Sex?
+        </label>
+        <select id="dropdown">
+        <option value="">CHOOSE</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="None">None</option>
+        <option value="Both">Both</option>
+        <option value="It">"It"</option>
+        </select>
+        </fieldset>
+        <fieldset>
+          <legend> Are you?... </legend>
+        <label>
+          <input type="radio" name="same" 
+          value="Alive">
+          Alive
+          </label>
+          <label>
+          <input type="radio" name="same" value="Dead">
+          Dead
+          </label>
+          <label>
+          <input type="radio" name="same" value="Unknown">
+          Unknown
+          </label>
+          </fieldset>
+           <fieldset>
+           <legend> Would you?... </legend>
+        <label>
+          <input type="checkbox" value="Poland">
+          Invade Poland
+          </label>
+          <label>
+          <input type="checkbox" value="Study-Arts">
+          Study arts at university
+          </label>
+          <label>
+          <input type="checkbox" value="Take-Care-Of-Animals">
+          Take care of animals
+          </label>
+           </fieldset>
+           <fieldset>
+            <legend> And finally... </legend>
+           <label for="textarea">
+             </label>
+             <textarea id="textarea" placeholder="Tell us a little bit about the war crimes you have commited so far "></textarea>
+             </fieldset>
+             
+        <input id="submit" type="submit" value="Submit">
+  </form>
+  </div>
+</body>
+</html>
